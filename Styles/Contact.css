@@ -1,0 +1,44 @@
+.contact-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-image {
+    max-width: 100%;
+    width:500px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.contact-image:hover {
+    transform: scale(1.1);
+    animation: shake 0.5s ease; /* Apply the shake animation on hover */
+}
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+  }
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-buttons button {
+    background: linear-gradient(45deg, #7d3cff, #5723a0); /* Linear gradient background */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-buttons button:hover {
+    background: #8a2be2 !important;/* Hover state linear gradient */
+}

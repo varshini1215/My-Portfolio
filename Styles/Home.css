@@ -1,0 +1,69 @@
+.home-container {
+    animation: slideInFromLeft 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.home-text-container {
+    flex: 1;
+}
+
+.home-text {
+    margin-left: 50px;
+    color: purple; 
+    animation: slideInFromLeft 1s ease forwards;
+}
+
+.home-texts {
+    margin-left: 50px;
+    color: #FFD700;
+    font-family: 'Playfair Display', serif;
+    animation: slideInFromBottom 1s ease;
+}
+
+.home-button {
+    background-color: #800080; 
+    font-style: oblique;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 60px;
+    margin-right: 0px;
+}
+
+.home-button:hover {
+    background-color: white; 
+    color: #800080;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

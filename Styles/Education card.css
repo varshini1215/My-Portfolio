@@ -1,0 +1,100 @@
+ 
+ .arrow-icon {
+    color: purple;
+    font-size: 24px;
+  }
+  .education-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    color: black;
+    border-radius: 10px;
+    overflow: hidden; 
+    margin-bottom: 20px;
+    transition: transform 0.3s; 
+  }
+  .details-box:hover {
+    transform: scale(1.05);
+  }
+  .year-box:hover {
+    background-color: #FFD700;
+    transform: scale(1.05); 
+  }
+  
+  .year-box {
+    background-color: purple ;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    animation: slideInFromLeft 1s ease-in-out;
+    font-size: 0.8rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 200px;
+    color: azure;
+  }
+  
+  .details-box {
+    padding: 20px;
+    margin-right: 250px;
+    justify-content: center;
+    align-items: center;
+    animation: slideInFromRight 1s ease-in-out;
+    background-color: lavender;
+    border-radius: 0 10px 10px 0 ;
+    height: 150px;
+    width: 400px;
+  }
+  
+  .education-degree,
+  .education-gpa,
+  .education-institution {
+    margin: 10px 0;
+  }
+  
+  
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .education-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .year-box,
+    .details-box {
+      width: auto;
+      margin: 10px;
+    }
+    .arrow-icon {
+        transform: rotate(90deg); /* Rotate the arrow icon for smaller screens */
+      }
+  } 
+
+ 
+  

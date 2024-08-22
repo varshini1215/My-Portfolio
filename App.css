@@ -1,0 +1,27 @@
+.section {
+  margin-bottom: 20px; /* Adjust the margin to create space between sections */
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slide-in {
+  animation: slideInFromLeft 1s ease forwards;
+}
+/* Define the animation for sliding in */
+@keyframes slideInFromLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.slide-in,.contact-image {
+  animation: slideInFromLeft 1s ease forwards;
+}
+

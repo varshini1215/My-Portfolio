@@ -1,0 +1,116 @@
+@keyframes slideIn {
+  0% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-5px);
+  }
+  75% {
+      transform: translateX(5px);
+  }
+}
+.technologies-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .technologies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .technology-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lavender;
+    border-radius: 10px;
+    padding: 20px;
+    width: 120px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Added transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .technology-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background-color: #e6e6fa;
+    animation: shake 0.3s ease-in-out;
+  }
+  .technology-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0 0 15px rgba(125, 60, 255, 0.6); /* Glowing effect */
+}
+
+.technology-box:hover::after {
+    opacity: 1;
+}
+  .technology-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+  }
+  .technology-icon:hover {
+    transform: rotate(20deg); /* Slight rotation on hover */
+}
+  .html-icon {
+    color: #E34F26; /* HTML5 color */
+  }
+  
+  .css-icon {
+    color: #1572B6; /* CSS3 color */
+  }
+  
+  .js-icon {
+    color: #F7DF1E; /* JavaScript color */
+  }
+  
+  .react-icon {
+    color: #61DAFB; /* React color */
+  }
+  
+  .node-icon {
+    color: #339933; /* Node.js color */
+  }
+  
+  .express-icon {
+    color: #000000; /* Express color */
+  }
+  
+  .mongodb-icon {
+    color: #47A248; /* MongoDB color */
+  }
+  
+  .technology-box p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s; 
+  }
+  .technology-box:hover p {
+    color: #7d3cff; /* Change text color on hover */
+}

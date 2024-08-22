@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+    padding: 10px 20px; /* Adjust padding as needed */
+    color: white;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+  }
+ 
+  .right-section {
+    display: flex;
+  }
+  
+  .right-section > * {
+    margin-left: 10px;
+  }
+  .right-section a{
+    color: white;
+  }
+  .section {
+    padding: 20px 0; /* Adjust the padding as needed */
+    margin: 0; /* Ensure there's no extra margin */
+}

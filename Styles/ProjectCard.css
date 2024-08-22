@@ -1,0 +1,122 @@
+
+.project-title {
+    text-align: center;
+    color: #7d3cff; /* Lighter shade of purple for title */
+    margin-bottom: 20px;
+}
+
+.project-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure contents don't overflow */
+    background-color:black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effect */
+}
+.project-container:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-image {
+    width: 50%; /* Set a medium width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project-image:hover {
+    transform: scale(1.1); /* Increase the size of the image on hover */
+}
+.project-details {
+    text-align: center;
+}
+
+.description {
+    color: #7d3cff; /* Lighter shade of purple for description */
+    margin-bottom: 10px;
+}
+
+.technologies-list {
+    margin-bottom: 10px;
+}
+
+.technologies-list li {
+    display: inline;
+}
+
+.technology-button {
+    background: #7d3cff;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.technology-button:hover {
+    background: #5723a0;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.github-button,
+.demo-button {
+    background: linear-gradient(45deg, #7d3cff, #5723a0);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.github-button:hover,
+.demo-button:hover {
+    background: linear-gradient(45deg, #5723a0, #7d3cff);
+}
+
+.github-button a,
+.demo-button a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.github-button a:hover,
+.demo-button a:hover {
+    text-decoration: underline;
+}
+
+.github-button svg,
+.demo-button svg {
+    font-size: 20px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.project-container {
+    animation: fadeInUp 1s ease;
+}
